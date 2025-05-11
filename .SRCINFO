@@ -1,0 +1,20 @@
+pkgbase = nvidia-vgpu-17-utils
+	pkgver = 550.163.02
+	pkgrel = 1
+	url = https://www.nvidia.com/
+	arch = x86_64
+	license = custom:proprietary
+	provides = nvidia-utils
+	conflicts = nvidia-utils
+	options = !strip
+	source = NVIDIA-Linux-x86_64-550.163.02-vgpu-kvm.run
+	source = vgpu_unlock_550.163.02.patch
+	sha256sums = 61ffc6d64e2a8df85c98f62ed804963dd3890fa6053e43237e645ea63b9675dc
+	sha256sums = 5aa8132419221b824ca3853406249913cff2774ba218d48abbc2b7bdc76cc3ae
+
+pkgname = nvidia-vgpu-17-utils
+	pkgdesc = NVIDIA vGPU drivers utilities v17
+
+pkgname = nvidia-vgpu-17-utils-unlock
+	pkgdesc = NVIDIA vGPU drivers utilities v17, with vGPU unlock patch
+	depends = vgpu_unlock-rs
