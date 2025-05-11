@@ -1,0 +1,14 @@
+pkgbase = nvidia-vgpu-18-utils
+	pkgver = 570.133.10
+	pkgrel = 1
+	url = https://www.nvidia.com/
+	arch = x86_64
+	license = custom:proprietary
+	provides = nvidia-utils
+	conflicts = nvidia-utils
+	options = !strip
+	source = NVIDIA-Linux-x86_64-570.133.10-vgpu-kvm.run
+	sha256sums = 1440818428817c9ea0dab98d92e3238a137cadc58956a62e5877ab6a735b9a85
+
+pkgname = nvidia-vgpu-18-utils
+	pkgdesc = NVIDIA vGPU drivers utilities v18
