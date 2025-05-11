@@ -1,0 +1,20 @@
+pkgbase = nvidia-vgpu-16-utils
+	pkgver = 535.247.02
+	pkgrel = 1
+	url = https://www.nvidia.com/
+	arch = x86_64
+	license = custom:proprietary
+	provides = nvidia-utils
+	conflicts = nvidia-utils
+	options = !strip
+	source = NVIDIA-Linux-x86_64-535.247.02-vgpu-kvm.run
+	source = vgpu_unlock_535.247.02.patch
+	sha256sums = d6bffcc1c2bfc0613981541df573ef87fd49ed2cb1df99d66e7f0f65f051c994
+	sha256sums = 24c519d71d8c53cc1198dbebdc1e58470c7cdd1472f4d07342029e6600298907
+
+pkgname = nvidia-vgpu-16-utils
+	pkgdesc = NVIDIA vGPU drivers utilities v16
+
+pkgname = nvidia-vgpu-16-utils-unlock
+	pkgdesc = NVIDIA vGPU drivers utilities v16, with vGPU unlock patch
+	depends = vgpu_unlock-rs
