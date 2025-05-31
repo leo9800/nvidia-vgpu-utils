@@ -1,7 +1,7 @@
 # Maintainer: Leo <i@hardrain980.com>
 pkgname=('nvidia-vgpu-18-utils')
 pkgbase=nvidia-vgpu-18-utils
-pkgver=570.133.10
+pkgver=570.148.06
 pkgrel=1
 arch=('x86_64')
 url="https://www.nvidia.com/"
@@ -12,7 +12,7 @@ options=(!strip)
 _pkg="NVIDIA-Linux-x86_64-${pkgver}-vgpu-kvm"
 _pkg_unlock="NVIDIA-Linux-x86_64-${pkgver}-vgpu-kvm-unlock"
 source=("${_pkg}.run")
-sha256sums=('1440818428817c9ea0dab98d92e3238a137cadc58956a62e5877ab6a735b9a85')
+sha256sums=('fedcb2fca8bdb80ade416d113c0b31a8fbc33ebf4c8cfb1fcc5325023db0fd45')
 
 prepare() {
 	sh "${_pkg}.run" -x
